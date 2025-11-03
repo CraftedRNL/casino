@@ -13,6 +13,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/path/to/cdn/vertical-carousel.css" />
+  <link rel="stylesheet" href="vertical-carousel.css" />
 </head>
 
 <body>
@@ -37,7 +39,7 @@
     <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="./img/icon_dice.png" alt="Dice" width="30" height="24">
+          <img src="./img/goldGrin.png" alt="Dice" width="30" height="24">
         </a>
         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
@@ -95,12 +97,43 @@
           Spin, bet, and win big — anytime, anywhere. Your next jackpot is just a click away.
         </h3>
        <div class="middle">
-         <button type="button" class="mx-auto btn btn-danger hero-btn">GAMBLE</button>
-        <button type="button" class="mx-auto btn btn-warning hero-btn">PLAY</button>
+         <button type="button" class="mx-auto btn btn-danger hero-btn"><h3>GAMBLE</h3></button>
+        <button type="button" class="mx-auto btn btn-warning hero-btn"><h3>SHOP</h3></button>
        </div>
       </div>
       <div class="col-lg-3 col-sm-1"></div>
     </div>
+
+
+    <div class="row gamble">
+      <div class="col-4">
+        <img id="c1m1" src="./img/craps.jpg" alt="">
+        <img id="c1m2" src="./img/blackjack.png" alt="">
+        <img id="c1m3" src="./img/lottery.png" alt="">
+      </div>
+      <div class="col-4">
+        <img id="c2m1" src="./img/slots.webp" alt="">
+        <img id="c2m2" src="./img/roulette.png" alt="">
+        <img id="c2m3" src="./img/poker.png" alt="">
+      </div>
+      <div class="col-4">
+        <img id="c3m1" src="./img/horseBetting.png" alt="">
+        <img id="c3m2" src="./img/bingo.png" alt="">
+        <img id="c3m3" src="./img/sportsBet.jpg" alt="">
+      </div>
+      
+      <div class="button-holder">
+        <!-- From Uiverse.io by catraco --> 
+<button id="rotate" class="btn-class-name">
+  <span class="back"></span>
+  <span class="front"></span>
+</button>
+      </div>
+      
+      
+    </div>
+
+
   </div>
 
   <script src="js/script.js"></script>
