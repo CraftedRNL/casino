@@ -1,18 +1,44 @@
-let col1Img1 = document.getElementById('c1m1');
-let col1Img2 = document.getElementById('c1m2');
-let col1Img3 = document.getElementById('c1m3');
-let column1 = [col1Img1, col1Img2, col1Img3];
-let col2Img1 = document.getElementById('c2m1');
-let col2Img2 = document.getElementById('c2m2');
-let col2Img3 = document.getElementById('c2m3');
-let column2 = [col2Img1, col2Img2, col2Img3];
-let col3Img1 = document.getElementById('c3m1');
-let col3Img2 = document.getElementById('c3m2');
-let col3Img3 = document.getElementById('c3m3');
-let column3 = [col3Img1, col3Img2, col3Img3];
+document.getElementById('c1').style.animation = 'none';
+document.getElementById('c2').style.animation = 'none';
+document.getElementById('c3').style.animation = 'none';
 
+let x = 3;
+let arr = ["./img/bingo.png" , "./img/blackjack.png" , "./img/craps.jpg" , "./img/horseBetting.png", "./img/lottery.png" , "./img/poker.png" , "./img/roulette.png" , "./img/slots.webp" , "./img/sportsBet.jpg" ]
 
+document.getElementById("rotate").addEventListener("click", function () {
+    
 
-document.getElementById('rotate').addEventListener('click', function(){
-    document.getElementById('c1m2').src = "./img/roulette.png";
-});
+    document.getElementById('c1').style.animation = '';
+    setTimeout(function () {
+        document.getElementById('c2').style.animation = '';
+        setTimeout(function () {
+            document.getElementById('c3').style.animation = '';
+
+        }, 500)
+    }, 500)
+ 
+
+    setTimeout(function () {
+        document.getElementById('m1').src = arr[x];
+        document.getElementById('c1').style.animation = 'none';
+       
+        setTimeout(function () {
+            document.getElementById('c2').style.animation = 'none';
+            document.getElementById('m2').src = arr[x+1];
+            setTimeout(function () {
+                document.getElementById('c3').style.animation = 'none';
+                document.getElementById('m3').src = arr[x+2];
+                increaseX();
+            }, 300)
+        }, 300)
+    }, 1500)
+
+})
+
+function increaseX(){
+    if(x === 6){
+        x = 0;
+    }else{
+        x+=3;
+    }
+}
