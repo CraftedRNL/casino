@@ -42,3 +42,13 @@ function increaseX(){
         x+=3;
     }
 }
+
+document.getElementById("m1").addEventListener("click", function () {
+    window.open("https://stake.us/?regionKey=US");
+})
+document.getElementById("m2").addEventListener("click", function () {
+    window.open("https://stake.us/?regionKey=US");
+})
+document.getElementById("m3").addEventListener("click", function () {
+    window.open("https://stake.us/?regionKey=US");
+})
