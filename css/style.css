@@ -125,7 +125,7 @@ margin: auto;
     text-align: center;
 }
 .about{
-    height: 100%;
+    height: auto;
     /* border-bottom: 3px var(--neutral-dark) solid; */
     width: 100%;
     justify-items: center;
@@ -134,7 +134,8 @@ margin: auto;
     background-size: cover;
     background-position: center;
     text-align: center;
-    background-color: var(--neutral-color);
+    background-color: rgb(201, 201, 201);
+    border: gold solid 5px;
 }
 
 .hero-header{
@@ -353,6 +354,11 @@ background: linear-gradient(0deg, rgba(255, 255, 255, 1) 15%, rgb(133, 133, 133)
     opacity: 1;
   }
 }
-.about > h3{
+.about-content > h3{
   color: #000;
+}
+.col-lg-5 > img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain ;
 }
